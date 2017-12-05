@@ -8,14 +8,9 @@
         </head>
     <body>
         <header class="container-fluid red"> 
-         <img class="red4" src="img/5.jpg"> 
-         <img class="red4" src="img/6.jpg"> 
-         <img class="red4" src="img/7.jpg"> 
-         <img class="red4" src="img/8.jpg">
-         <img class="red4" src="img/9.jpg">
-         <img class="red4" src="img/10.jpg">
-          <img class="red4" src="img/12.jpg">
-          <img class="red4" src="img/13.jpg">
+        
+        <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center"><img class="img-fluid px-2" alt="Responsive image" src="img/5.jpg"><img class="img-fluid px-2" alt="Responsive image" src="img/6.jpg"><img class="img-fluid px-2" alt="Responsive image" src="img/7.jpg"><img class="img-fluid px-2" alt="Responsive image" src="img/8.jpg"><img class="img-fluid px-2" alt="Responsive image" src="img/9.jpg"><img class="img-fluid px-2" alt="Responsive image" src="img/10.jpg"><img class="px-2" alt="Responsive image" src="img/13.jpg"></div>
+    
         </header>
         <section class="container">
             <div class="row">
