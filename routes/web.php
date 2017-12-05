@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/admin', 'HomeController@index');
+Route::get('/', 'WelcomeController@index');
+Route::get('/home', 'WelcomeController@index')->name('welcome');
+Auth::routes();
+
+
+Route::get('/download/id', 'FileController@index')->name('download');
+Route::get('/click/id', 'FileClickController@index')->name('click');
