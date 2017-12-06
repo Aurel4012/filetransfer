@@ -2,7 +2,7 @@
 <html>
         <head>
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-             <link rel="stylesheet" href="css/font-awesome.css">
+             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="css/style.css">
 
             <title>filetransfert</title>
@@ -33,10 +33,11 @@
 <!-- File Button --> 
 <div class="form-group col-12">
      <div class="col-md-12">
-<div class="col-md-6"><i class="fa fa-plus-circle fa-12x" aria-hidden="true"></i></div>
+      <!-- icone  -->
+<div class="col-md-6"><i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i></div>
                 <h4>Ajoute ton fichier</h4>
   <div class="col-md-12">
-   <input id="filebutton" name="filebutton" class="input-file p-2" type="file">
+   <input id="filebutton" name="filebutton" class="input-file p-2" type="file" required="">
   </div>
 </div>
 

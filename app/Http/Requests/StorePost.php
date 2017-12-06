@@ -24,7 +24,11 @@ class StorePost extends FormRequest
     public function rules()
     {
         return [
-            //
+           'email_from' => 'bail|required',
+            'your_email' => 'bail|required',
+            'description' => 'bail',
+            'file_upload' => 'required'
         ];
     }
 }
+    
