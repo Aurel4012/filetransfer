@@ -26,6 +26,7 @@
  	<legend class="col-10 col-sm-10 col-md-12 d-flex justify-content-center">Partage ton fichier avec tes amis</legend>
 	{!! Form::token();!!}
    	{!!Form::email('mail_to', '',['placeholder'=>'Envoyé à', 'class' => 'form-control input-md'])!!}<br>
+    <!-- {!! $errors !!} -->
    	{!!Form::email('mail_from', '',['placeholder'=>'Ton mail', 'class' => 'form-control input-md'])!!}<br>
    	{!!Form::text('file_description', '',['placeholder'=>'Descriptif (facultatif)', 'class' => 'form-control input-md'])!!}<br>
     {!!Form::file('file_url', $attributes = array(),['class' => 'py-4'])!!}<br>

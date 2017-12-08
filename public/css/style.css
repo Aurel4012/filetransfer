@@ -2,7 +2,7 @@ body{
   background-image: url(../img/deux.jpg);
   background-repeat: no-repeat; 
 }
-p{
+#zone{
    font-size: 40px;
    color: white;
 

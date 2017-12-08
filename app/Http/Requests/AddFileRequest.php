@@ -24,10 +24,7 @@ class AddFileRequest extends FormRequest
     public function rules()
     {
         return [
-            'mail_from' => 'bail|required',
-            'your_mail' => 'bail|required',
-            'description_file' => 'bail',
-            'file_upload' => 'required'
+            //
         ];
     }
 }

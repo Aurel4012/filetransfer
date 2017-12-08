@@ -40,12 +40,12 @@
 
 
                                 <h4>Vous avez terminé !</h4>
-                                <p>L'e‐mail de téléchargement a
+                                <p class="text-dark">L'e‐mail de téléchargement a
                                 été envoyé, votre transfert
                                 sera disponible pendant
                                 7 jours</p><br>
                                 <h4>Lien de téléchargement</h4>
-                                <p><a href="{{ route('download', ['id'=>$id])}}">Télécharger</a></p>
+                                <h6>{{ route('download', ['id'=>$id])}}</h6>
                   </div>
                 </div>
 
@@ -62,7 +62,7 @@
 
                 </div>
                 </div>  
-            <h4 class="text-light bg-dark">lien</h4>
+           
       </section>
         <article class="container">
             

@@ -14,9 +14,12 @@
 Route::get('/', 'WelcomeController@index')->name('home');
 Route::post('/upload', 'WelcomeController@upload')->name('upload');
 Route::get('/download/{id}', 'FileController@index')->name('download');
-
-
-Route::get('/success/{id}', 'SuccesController@index')->name('success');
+Route::get('/forcedownload/{id}', 'FileController@download')->name('forcedl');
+Route::get('/thanks', function()
+{
+    return view('thanks');
+})->name('thanks');
+ 
 
 Auth::routes();
 

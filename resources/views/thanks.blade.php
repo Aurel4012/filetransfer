@@ -37,7 +37,7 @@
                       <br>
                       <i class="fa fa-check fa-4x" aria-hidden="true"></i><br>
                       <h4>Thanks!</h4>
-                        <p>If you like us share our service</p>
+                        <p class="text-dark">If you like us share our services</p>
 
 
                        
@@ -55,8 +55,8 @@
             <!-- Button -->
               <div class="form-group">
               <div class="col-md-12 text-center">
-                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Partager un
-                fichier</button>
+                <a href="{{route('home')}}"><button id="thanks" name="singlebutton" class="btn btn-primary">Partager un
+                fichier</button></a>
               </div>
               </div>
 
@@ -65,12 +65,14 @@
 
                 </div>
                 </div>  
-            <h4 class="text-light bg-dark">{{ route('download') }}</h4>
+            
       </section>
         <article class="container">
             
             
         </article>
-
+     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>

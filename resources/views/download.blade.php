@@ -10,7 +10,7 @@
         </head>
 
     <body>
-
+        
         <header class="container-fluid red"> 
         
         <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/5.jpg')}}"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/6.jpg')}}"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/7.jpg')}}"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/8.jpg')}}"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/9.jpg')}}"><img class="img-fluid px-2" alt="Responsive image" src="{{url('img/10.jpg')}}"><img class="px-2" alt="Responsive image" src="{{url('img/13.jpg')}}"></div>
@@ -48,7 +48,11 @@
             <!-- Button -->
               <div class="form-group">
               <div class="col-md-12 text-center">
-                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Un Aurte ?</button>
+                <h6>Télécharger le fichier:</h6>
+                <h6>{{ $file->real_name }}</h6>
+                <a href="{{route('forcedl',['id'=>$file->id_upload])}}">
+                  <button id="telecharger" data-lien="{{route('thanks')}}" name="singlebutton" action="" class="btn btn-primary">Telecharger</button>
+                </a>
               </div>
               </div>
 
@@ -62,6 +66,7 @@
             
             
         </article>
-
+    <script type="text/javascript" src="{{url('js/jquery-3.2.1.slim.min.js')}}"></script>
+    <script type="text/javascript" src="{{url('js/clickthanks.js')}}"></script>
     </body>
 </html>

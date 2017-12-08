@@ -15,9 +15,10 @@ class CreateUploadTable extends Migration
     {
         Schema::create('upload', function (Blueprint $table) {
             $table->increments('id_upload');
-            $table->string('mail_from',250)->unique();
-            $table->string('mail_to',250)->unique();
+            $table->string('mail_from',250);
+            $table->string('mail_to',250);
             $table->string('file_url');
+            $table->string('file_url_nc');
             $table->string('file_size');
             $table->string('file_description');
             $table->timestamp('upload_at')->nullable();

@@ -16,6 +16,7 @@ class WelcomeController extends Controller
 
     public function upload(Request $request){
     	$upload = new Upload($request->except('csrf_token'));
+        $upload->real_name = $request->file_url->getClientOriginalName();
     	$fname = Storage::disk('upload')->put('', $request->file_url);
     	$upload->file_url = $fname;
     	$upload->save();
