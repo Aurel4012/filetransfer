@@ -11,12 +11,15 @@
 |
 */
 
-Route::get('/admin', 'HomeController@index');
+Route::get('/', 'WelcomeController@index')->name('home');
 Route::post('/upload', 'WelcomeController@upload')->name('upload');
-Route::get('/', 'WelcomeController@index');
-Route::get('/home', 'WelcomeController@index')->name('welcome');
+Route::get('/download/{id}', 'FileController@index')->name('download');
+
+
+Route::get('/success/{id}', 'SuccesController@index')->name('success');
+
 Auth::routes();
 
+//Route::get('/click/id', 'FileClickController@index')->name('click');
 
-Route::get('/download/id', 'FileController@index')->name('download');
-Route::get('/click/id', 'FileClickController@index')->name('click');
+Route::get('/admin', 'HomeController@index');
