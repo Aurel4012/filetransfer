@@ -4,8 +4,8 @@
     <meta charset="utf-8">
   </head>
   <body>
-     <div  style="background-color: black;text-align: center;"><span style="color: white;font-size: 40px;">ZONE</span><span style="color: red;font-size: 40px;"> RED!</span></div><br> 
-    <h2>Bonjour, un fichier à été partagé avec vous</h2>
+    <div  style="background-color: black;text-align: center;"><span style="color: white;font-size: 40px;">ZONE</span><span style="color: red;font-size: 40px;"> RED!</span></div><br> 
+    <h2>Bonjour le fichier que vous avez partagé à été téléchargé</h2>
     <ul>
       <li><strong>Envoyé à</strong> : {{ $contact->mail_to }}</li>
       <li><strong>De la part de</strong> : {{ $contact->mail_from }}</li>

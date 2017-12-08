@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Contact;
+use App\Http\Requests\UploadFormRequest;
 
 class WelcomeController extends Controller
 {
@@ -14,7 +15,7 @@ class WelcomeController extends Controller
         return view('welcome');
     }
 
-    public function upload(Request $request){
+    public function upload(UploadFormRequest $request){
     	$upload = new Upload($request->except('csrf_token'));
         $upload->real_name = $request->file_url->getClientOriginalName();
     	$fname = Storage::disk('upload')->put('', $request->file_url);

@@ -20,7 +20,7 @@
           
                 <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 d-flex">
-                <p id="ZONE">ZONE<span id="red2"> RED </span>!</p>  
+                <p><span id="red1">ZONE</span><span id="red2"> RED!</span></p>   
                 </div>
                 </div>
                 <div class="row">

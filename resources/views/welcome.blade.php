@@ -17,20 +17,22 @@
           
                 <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 d-flex">
-                <p>ZONE<span id="red2"> RED </span>!</p>  
+                <p><span id="red1">ZONE</span><span id="red2"> RED!</span></p>  
                 </div>
             </div>
               <div class="row">
                 <div class="col-10 col-sm-10 col-md-6 justify-content-center bg-light border border-primary rounded w-75 p-3">
  	{!! Form::open(['route' => 'upload', 'files' => true]) !!}
+    @if ($errors->has('file_url'))
+    <strong class="text-danger">{{ $errors->first('file_url') }}</strong>
+     @endif
  	<legend class="col-10 col-sm-10 col-md-12 d-flex justify-content-center">Partage ton fichier avec tes amis</legend>
 	{!! Form::token();!!}
    	{!!Form::email('mail_to', '',['placeholder'=>'Envoyé à', 'class' => 'form-control input-md'])!!}<br>
-    <!-- {!! $errors !!} -->
    	{!!Form::email('mail_from', '',['placeholder'=>'Ton mail', 'class' => 'form-control input-md'])!!}<br>
    	{!!Form::text('file_description', '',['placeholder'=>'Descriptif (facultatif)', 'class' => 'form-control input-md'])!!}<br>
-    {!!Form::file('file_url', $attributes = array(),['class' => 'py-4'])!!}<br>
-    {!!Form::submit('Envoyer!',['class' => 'btn btn-primary px-2'])!!}
+    {!!Form::file('file_url', $attributes = array(),['class' => 'py-4'])!!}<br><br>
+    {!!Form::submit('Envoyer!',['class' => 'btn btn-primary px-4'])!!}
 	{!! Form::close() !!}
 
                 </div>

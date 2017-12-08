@@ -8,20 +8,20 @@ body{
 
     
 }
+#red1{
+    font-size: 40px;
+    color: white;
+}
 #red2{
+    font-size: 40px;
     color: red;
 }
-cd
 
 .red{
-    width: 100%;
-    height: 250px;
-    background-color: ;
-    background-color: rgba(0, 0, 255, 0.2);
-    
-    
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.2);   
 }
 .red4{
-    margin-top: 80px;
+    margin-top: 70px;
      padding: 15px;
 }
